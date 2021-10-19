@@ -19,7 +19,7 @@
         <td><%= recipe.name %></td>
         <td><%= recipe.ingredients %></td>
         <td><%= recipe.step %></td>
-        <td><%= recipe.image %></td>
+        <td><img class="card" style="width: 18rem;" src="<%= recipe.image %>"/></td>
         <td><%= link_to 'Show', recipe %></td>
         <td><%= link_to 'Edit', edit_recipe_path(recipe) %></td>
         <td><%= link_to 'Destroy', recipe, method: :delete, data: { confirm: 'Are you sure?' } %></td>

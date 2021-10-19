@@ -1,3 +1,12 @@
 <% name = current_user.present? ? current_user.email : 'to Kitchen Recipes'  %>
-<h1>Welcome <%= name %> </h1>
-<p>A curated list of recipes for a good time at your kitchen with the best meals</p>
+
+<div className="vw-100 vh-100 primary-color d-flex align-items-center justify-content-center">
+<div className="bg-transparent p-5 rounded-lg m-3">
+    <div className="container">
+        <h1 className="display-4">Welcome <%= name %></h1>
+        <p className="lead">A curated list of recipes for a good time at your kitchen with the best meals</p>
+        <hr className="my-4"/>
+        <a href="/recipes" className="btn btn-lg custom-button" role="button">Take a pic! </a>
+    </div>
+</div>
+</div>
